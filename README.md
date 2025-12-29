@@ -31,20 +31,22 @@ Scanning... ━━━━━━━━━━━━━━━━━━━━━━�
 
 Scan Complete. Report saved to mongo_audit.json
 
+```
+
 ## 🚀 Key Features
 
-- **🧠 Heuristic Intelligence:** Real-time entropy calculation to identify encrypted data or keys within leaked memory chunks.
-- **⚡ High-Performance AsyncIO:** Scans hundreds of targets simultaneously with minimal resource footprint.
-- **🛡️ Smart Filtering:** Automatically removes null bytes and filters out low-entropy "junk" data.
-- **⚗️ Hybrid Analysis:** Reports both the raw leak size (Scanner Mode) and the analyzed content (Forensic Mode).
-- **👻 Stealth Mode:** Includes a `--safe` flag for throttled, production-safe scanning.
-- **JSON Export:** Structured output for easy integration with vulnerability management platforms.
+* **🧠 Heuristic Intelligence:** Real-time entropy calculation to identify encrypted data or keys within leaked memory chunks.
+* **⚡ High-Performance AsyncIO:** Scans hundreds of targets simultaneously with minimal resource footprint.
+* **🛡️ Smart Filtering:** Automatically removes null bytes and filters out low-entropy "junk" data.
+* **⚗️ Hybrid Analysis:** Reports both the raw leak size (Scanner Mode) and the analyzed content (Forensic Mode).
+* **👻 Stealth Mode:** Includes a `--safe` flag for throttled, production-safe scanning.
+* **JSON Export:** Structured output for easy integration with vulnerability management platforms.
 
 ## 📦 Installation
 
 ```bash
 # Clone the repository
-git clone [https://github.com/YOUR_USERNAME/MongoDeepDive.git](https://github.com/YOUR_USERNAME/MongoDeepDive.git)
+git clone https://github.com/tunahantekeoglu/MongoDeepDive.git
 
 # Enter the directory
 cd MongoDeepDive
