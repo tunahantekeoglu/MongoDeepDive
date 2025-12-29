@@ -92,6 +92,3 @@ This tool is intended for security research, authorized Red Team engagements, an
 
 **Author:** Tunahan Tekeoğlu
 
-```
-
-```
