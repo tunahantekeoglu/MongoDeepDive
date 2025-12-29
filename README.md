@@ -92,3 +92,22 @@ This tool is intended for security research, authorized Red Team engagements, an
 
 **Author:** Tunahan Tekeoğlu
 
+
+## Get in touch with me! 🚀
+
+[![Instagram](https://img.shields.io/badge/-tunahantekeoglu-E4405F?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/tunahantekeoglu)<br>
+[![Twitter](https://img.shields.io/badge/-tunahantekeoglu-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/tunahantekeoglu)<br>
+[![LinkedIn](https://img.shields.io/badge/-tunahantekeoglu-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/tunahantekeoglu/?originalSubdomain=tr)<br>
+
+### Or You Can Send Me an Email 📩
+
+[![Email](https://img.shields.io/badge/tunahantekeoglu%40gmail.com-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:tunahantekeoglu@gmail.com)
+
+## To Read My Articles About Cyber Security
+
+[![Medium](https://img.shields.io/badge/-tun4hunt-000000?style=for-the-badge&logo=Medium&logoColor=white)](https://medium.com/@tun4hunt)
+
+</div>
+
+---
+
