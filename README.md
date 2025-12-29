@@ -14,8 +14,22 @@ Unlike standard PoC scripts that merely check for response size, MongoDeepDive e
 
 This tool is engineered for **Security Architects** and **Red Teamers** who need actionable intelligence, not just noise.
 
-![Demo](assets/demo.png)
-*(Note: Add a screenshot of the tool running here for better visibility)*
+### 📺 Demo Output
+
+```text
+────────────────────────── MongoDeepDive - Tunahan Tekeoğlu ──────────────────────────
+Scanning... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:02
+
+[+] VULNERABLE: 192.168.1.15:27017 | Response Size: 65552 bytes
+    └── SECRETS FOUND: 3 critical blocks extracted
+       ➜ SECRET_EXPOSED (AWS_KEY)
+       ➜ HIGH_ENTROPY (Key/Encrypted)
+       ➜ SECRET_EXPOSED (DB_URI)
+
+[+] VULNERABLE: 192.168.1.18:27017 | Response Size: 65552 bytes
+    └── Leak confirmed, but memory content is currently empty/low-entropy.
+
+Scan Complete. Report saved to mongo_audit.json
 
 ## 🚀 Key Features
 
