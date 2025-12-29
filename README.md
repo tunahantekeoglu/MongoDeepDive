@@ -1,4 +1,3 @@
-```markdown
 # 🌊 MongoDeepDive
 
 > **Context-Aware MongoDB Wire Protocol Exploit (CVE-2025-14847)** > *Advanced Heuristics Analyzer for Red Team Operations*
