@@ -1,3 +1,4 @@
+```markdown
 # 🌊 MongoDeepDive
 
 > **Context-Aware MongoDB Wire Protocol Exploit (CVE-2025-14847)** > *Advanced Heuristics Analyzer for Red Team Operations*
@@ -13,6 +14,9 @@
 Unlike standard PoC scripts that merely check for response size, MongoDeepDive employs **Shannon Entropy** analysis and heuristic filtering to distinguish between empty memory padding (garbage) and high-value secrets (e.g., Private Keys, AWS Tokens, Passwords).
 
 This tool is engineered for **Security Architects** and **Red Teamers** who need actionable intelligence, not just noise.
+
+![Demo](assets/demo.png)
+*(Note: Add a screenshot of the tool running here for better visibility)*
 
 ## 🚀 Key Features
 
@@ -34,3 +38,61 @@ cd MongoDeepDive
 
 # Install dependencies
 pip install -r requirements.txt
+
+```
+
+*(Note: Requires `rich` library for CLI visualization)*
+
+## 🛠️ Usage
+
+### 1. Mass Scanning (List Mode)
+
+Scan a list of targets with high concurrency and generate a JSON report:
+
+```bash
+python3 mongo_deep_dive.py -l targets.txt -o report.json -c 50
+
+```
+
+### 2. Deep Extraction (Single Target)
+
+Aggressively siphon memory from a confirmed target to hunt for secrets (e.g., sending 1000 packets):
+
+```bash
+python3 mongo_deep_dive.py -t 192.168.1.10 -n 1000
+
+```
+
+### 3. Production / Stealth Mode
+
+Enable throttling to avoid network saturation or service instability on legacy systems:
+
+```bash
+python3 mongo_deep_dive.py -l targets.txt --safe
+
+```
+
+## 🧠 How It Works
+
+1. **Payload Injection:** Sends a malformed `OP_COMPRESSED` packet with a spoofed uncompressed size.
+2. **Memory Leak:** The vulnerable server allocates memory based on the spoofed size but fails to initialize it, returning raw heap data.
+3. **Entropy Analysis:** The tool calculates the Shannon Entropy of the returned bytes.
+* **Entropy > 4.5:** Likely Encrypted Data, Keys, or Compressed Strings.
+* **Entropy < 3.0:** Likely Padding, Logs, or Null Bytes.
+
+
+4. **Pattern Matching:** Regex filters are applied to identify specific patterns like `AKIA...` (AWS Keys) or `eyJ...` (JWTs).
+
+## ⚠️ Disclaimer
+
+**For Educational and Authorized Testing Purposes Only.**
+
+This tool is intended for security research, authorized Red Team engagements, and vulnerability assessment. The author takes no responsibility for the misuse of this code. Accessing computer systems without permission is illegal.
+
+---
+
+**Author:** Tunahan Tekeoğlu
+
+```
+
+```
